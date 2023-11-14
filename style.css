@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0f1b;
+    color: #c0c0c0;
+    text-align: center;
+    padding: 20px;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #1c2230;
+    color: #39f;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    width: 100%;
+}
+
+.story-section, .choices-section, .image-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #18202b;
+    border-radius: 8px;
+    border: 1px solid #39f;
+    color: #fff;
+    width: 80%;
+    max-width: 600px;
+}
+
+button {
+    background-color: #39f;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #2a7dbf;
+    transform: scale(1.05);
+}
+
+.back-button {
+    display: none; /* Initially hidden */
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #39f;
+}
+
+@media screen and (max-width: 768px) {
+    .story-section, .choices-section, .image-section {
+        width: 95%;
+    }
+}
